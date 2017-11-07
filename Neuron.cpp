@@ -52,9 +52,9 @@ double Neuron::calcul_poisson()const {
     if(poisson){
         coeff_poisson=Je;
     }
-    random_device rd;
-    mt19937 gen(rd());
-    poisson_distribution<> distribution(nu*Ne*h/10*Je);
+    static random_device rd;
+    static mt19937 gen(rd());
+    static poisson_distribution<> distribution(nu*Ne*h/10*Je);
     return distribution(gen)*coeff_poisson;
 }
 
