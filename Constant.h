@@ -7,7 +7,7 @@
 #include <cmath>
 
 const double Simstart(0); ///beginning of the simulation
-const double Simstop(1000); ///number of time steps in the simulation
+const double Simstop(10000); ///number of time steps in the simulation
 
 const double conections(0.1); ///chances of connection between two neurons
 const int Ne(10000); ///number of excitatory neurons
